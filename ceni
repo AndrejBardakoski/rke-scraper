@@ -1,0 +1,21 @@
+https://www.erc.org.mk/ceni.aspx
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+
+
+elekrricna energija  e=2
+priroden gas e=4
+toplinska energija e=3
+nafta e=1
+obnovlivi izvori e=5
+
+
+
+
+raw http:
+    POST /ceni.aspx HTTP/1.1
+    Host: www.erc.org.mk
+    Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+    Content-Length: 3
+
+- - - - - - - -  payload:
+    e=5
