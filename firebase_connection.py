@@ -1,11 +1,8 @@
-import firebase_admin
+import cyrtranslit
 import firestore
-from firebase_admin import credentials
-from firebase_admin import db
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
-import cyrtranslit
 
 
 def document_name_parser(document_name):
@@ -24,7 +21,7 @@ def document_name_parser(document_name):
 
 class FirebaseConnection:
     def __init__(self):
-        cred = credentials.Certificate('rkeapp-d25a4-firebase-adminsdk-9ate9-785abf1044.json')
+        cred = credentials.Certificate('firebase-connection.json')
         self.app = firebase_admin.initialize_app(cred)
         self.db = firestore.client()
 

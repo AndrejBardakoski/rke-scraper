@@ -7,7 +7,8 @@ if __name__ == '__main__':
     firebase = fc.FirebaseConnection()
 
     url = 'https://www.erc.org.mk/ceni.aspx'
-    header = {"Content-Type": "application/x-www-form-urlencoded"}
+    header = {"Content-Type": "application/x-www-form-urlencoded",
+              "User-Agent": "Defined"}
     pages = {"electricity": "e=2",
              "natural_gas": "e=4",
              "district_heating": "e=3",
